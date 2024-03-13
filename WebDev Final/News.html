@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>MuscleFuel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="BusinessWebsiteScript.js" defer></script>
+  </head>
+
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="MscleLogo.png" class="logo"></a>
+        <ul>
+          <li><a href="MainPage.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="News.html">News</a></li>
+          <li><a href="Billing.html">Billing</a></li>
+        </ul>
+      </header>
+  
+      <div class="news-slider">
+        <div class="slide">
+          <img src="news2.jpg" alt="Protein Shake Research">
+          <h2>Protein Shakes: The Key to Muscle Recovery</h2>
+          <p>Discover the latest research on how protein shakes can enhance muscle recovery after intense workouts.</p>
+        </div>
+        <div class="slide">
+          <img src="news2.jpg" alt="Bodybuilding Trends 2023">
+          <h2>New Bodybuilding Trends for 2023</h2>
+          <p>Explore the emerging trends in bodybuilding for this year, including new workout routines and techniques.</p>
+        </div>
+      </div>
+  
+      <script>
+    
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+  
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+          });
+        }
+  
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+        showSlide(currentSlide);
+      </script>
+    </section>
+  </body>
+</html>

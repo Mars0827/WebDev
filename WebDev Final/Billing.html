@@ -1,0 +1,262 @@
+<html>
+  <head>
+    <title>MuscleFuel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="BusinessWebsiteScript.js" defer></script>
+  </head>
+
+  <body>
+    <section class="sec1">
+      <header>
+        <a href="#"><img src="MscleLogo.png" class="logo"></a>
+        <ul>
+          <li><a href="MainPage.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="News.html">News</a></li>
+          <li><a href="Billing.html">Billing</a></li>
+        </ul>
+      </header>
+    </section>
+      <form id="form1" action="post">
+        <div id="main">
+            <h1>ORDER NOW</h1>
+
+            <hr><BR></BR>
+            <DIV id="order">
+                <h2>Order form</h2>
+                <div id="hehe">
+                   
+                    <input type="text" id="date" name="date"  value="mm-dd-yyyy" readonly="readonly" />
+
+                </div>
+
+            </DIV>
+            <fieldset>
+                <legend>Select a Product</legend>
+                <div id="order">
+
+                    <div id="balo">
+                        <label for="prod">Product: &nbsp;</label>
+                        <select name="prod" id="prod">
+                            <option value="0">Products from MuscleFuel</option>
+                            <option value="19.95">Vanilla Flavor whey Protein ($19.95)</option>
+                            <option value="29.95">Double Rich Chocolate Whey Protein ($29.95)</option>
+                            <option value="29.95">Standard Flavor Whey Protein($29.95)</option>
+
+                        </select>
+                        <select name="qty" id="qty">
+                            <option value="0">Quantity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input class="num" name="price" id="price" size="7" value="0.00" readonly="readonly" />
+
+                    </div>
+
+                </div>
+                <div id="order">
+                    <div>
+                        <label for="num">Tax(5%)</label>
+                    </div>
+                    <div>
+                        <input class="num" name="tax" id="tax" size="7" value="0.00" readonly="readonly" />
+
+                    </div>
+                </div>
+
+                <div id="order1">
+                    <div>
+                        <label> Shipping: </label>
+                        <p>
+                            <input type="radio" name="shipType" id="ship1" value="4.95" />
+                            <label for="ship1">Standard (4-6 business days): $4.95</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="shipType" id="ship2" value="8.95" />
+                            <label for="ship2">Express (2 days): $8.95</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="shipType" id="ship3" value="12.95" />
+                            <label for="ship3">Next Day (1 day): $12.95</label>
+                        </p>
+                    </div>
+                    <div>
+                      
+                        <input class="num" name="ship" id="ship" size="7" value="0.00" readonly="readonly" />
+
+                    </div>
+
+                </div>
+                <div id="order2">
+                    <label for="balo">TOTAL: &nbsp;</label>
+                    <input class="num" name="tot" id="tot" size="7" value="0.00" readonly="readonly" />
+
+                </div>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Shipping address</legend>
+
+
+                <label for="name">Name: &nbsp;</label>
+                <input type="text" name="name" id="name" size="50">
+
+
+                <br>
+                <label id="kapoy" for="street">
+                    <span>Street:</span>
+                    <textarea name="street" id="street" cols="60" rows="5" class></textarea>
+                </label>
+
+                <label for="city">City: &nbsp;</label>
+                <input type="text" name="city" id="city">
+                </label>
+
+                <label for="state">State: </label>
+                <select name="state" id="state">
+                    <option value="0">Cebu</option>
+                    <option value="1">Cebu Province</option>
+
+                </select>
+
+                <label for="zip">Zip: &nbsp;</label>
+                <input type="text" name="zip" id="zip">
+                </label>
+
+            </fieldset>
+            <br>
+  
+          </div>
+        </form>  
+        <form id="form1" action="post">
+            <div id="main"></div>
+            <fieldset>
+                <legend>Billing Address</legend>
+
+
+                <label for="name">Name: &nbsp;</label>
+                <input type="text" name="name" id="name" size="50">
+
+
+                <br>
+                <label id="kapoy" for="street">
+                    <span>Street:</span>
+                    <textarea name="street" id="street" cols="60" rows="5" class></textarea>
+                </label>
+
+                <label for="city">City: &nbsp;</label>
+                <input type="text" name="city" id="city">
+                </label>
+
+                <label for="state">State: </label>
+                <select name="state" id="state">
+                    <option value="0">Cebu</option>
+                    <option value="1">Cebu Province</option>
+
+                </select>
+
+                <label for="zip">Zip: &nbsp;</label>
+                <input type="text" name="zip" id="zip">
+                </label>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Credit Card Information </legend>
+
+
+                <label for="name">Name: &nbsp;</label>
+                <input type="text" name="name" id="name" size="50">
+
+                <div id="tanan">
+
+                    <label> Card: </label>
+                    <div id="order">
+
+                        <div>
+                            <p>
+                                <input type="radio" name="american" id="american" />
+                                <label for="american">American Express</label>
+                            </p>
+
+                            <p>
+                                <input type="radio" name="citybank" id="citybank" />
+                                <label for="citybank">City Bank</label>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <input type="radio" name="diver" id="diver" />
+                                <label for="diver">Diver's Club</label>
+                            </p>
+
+                            <p>
+                                <input type="radio" name="discover" id="discover" />
+                                <label for="discover">Discover</label>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <input type="radio" name="mastercard" id="mastercard" />
+                                <label for="mastercard">Mastercard</label>
+                            </p>
+
+                            <p>
+                                <input type="radio" name="visa" id="visa" />
+                                <label for="discover">Visa</label>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <label for="num">Number: &nbsp;</label>
+                <input type="text" name="num" id="num">
+                </label>
+
+                <label for="exp">Expiration: &nbsp;</label>
+                <select name="exp" id="exp">
+                    <option value="0">01</option>
+                    <option value="1">02</option>
+                    <option value="2">03</option>
+                    <option value="3">04</option>
+                    <option value="4">05</option>
+                    <option value="5">06</option>
+                    <option value="6">07</option>
+                    <option value="7">08</option>
+                    <option value="8">09</option>
+                    <option value="9">10</option>
+                    <option value="10">11</option>
+                    <option value="11">12</option>
+                </select>
+                <span>,</span>
+                <select name="year" id="year">
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                </select>
+
+
+            </fieldset>
+
+            <p id="formbuttons">
+
+                <input type="submit" name="nextb" id="nextb" value="Summit Order" />
+                <input type="reset" name="cancelb" id="cancelb" value="Cancel Order" />
+            </p>
+        </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Muscle Fuel</title>
+    <link rel="stylesheet" type="text/css" href="LandingPage.css">
+    <script src="index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"/>
+    <script src="BusinessWebsiteScript.js" defer></script>
+</head>
+
+<body>
+
+    <section id="landing-page">
+        <div class="landing-page-container">
+            <div class="navbar1">
+                <h1>Muscle<span></span></h1>
+                <h1 style="color: red; font-size: 8rem; font-weight: 900;">Fuel<span></span></h1>
+                <h1>Get Buffed!<span></span></h1>
+                <a onclick="showLogin()" href="#" type="button" id="landing-button">Click Here!</a>
+            </div>
+        </div>
+    </section> 
+
+    <div id="login-page">
+        <div id="login-container">
+            <h2>Login</h2>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input id="username" type="text" placeholder="Username">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input id="password" type="password" placeholder="Password">
+                    </div>
+                </div>
+                <button onclick="attemptLogin()">Log In</button>
+            </form>
+            <p id="lost-password">Lost password? <a target="blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Here!</a></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
